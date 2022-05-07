@@ -1,7 +1,7 @@
 #!/bin/bash
 #install Python Dependancies
 pip install -r requirements.txt 
-
+pip install virtualenv
 # Create user/pass variables
 read -p "Enter your Oreilly username: " OR_USER
 read -p "Enter your Oreilly password: " OR_PASS
