@@ -32,6 +32,7 @@ class oreilly:
         #enter password
         self.driver.find_element(By.ID, "input-1b7bwfrw657").send_keys(oreilly_vars.password)
         self.driver.find_element(By.CSS_SELECTOR, ".orm-Button-btnContentWrap").click()
+        time.sleep(60)
         self.driver.quit()
 
 Oreilly = oreilly()
