@@ -36,4 +36,4 @@ class oreilly:
         self.driver.quit()
 
 Oreilly = oreilly()
-Oreilly()
+Oreilly.open_account()
