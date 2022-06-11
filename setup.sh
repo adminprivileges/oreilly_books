@@ -5,8 +5,8 @@ pip install virtualenv
 # Create user/pass variables
 read -p "Enter your Oreilly username: " OR_USER
 read -p "Enter your Oreilly password: " OR_PASS
-echo "user = "$OR_USER"
-password = "$OR_PASS"
+echo "user = \"$OR_USER\"
+password = \"$OR_PASS\"
 " | tee ./oreilly_vars.py
 
 #creates a virtual environemnt
