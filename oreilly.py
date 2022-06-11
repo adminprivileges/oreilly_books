@@ -15,7 +15,7 @@ class oreilly:
         options = Options()
         options.headless = True
         #This prevents me from having to dwnload the gecko self.driver
-        self.driver = webdriver.Firefox(options=options, serive=Service(GeckoDriverManager().install()))
+        self.driver = webdriver.Firefox(options=options, service=Service(GeckoDriverManager().install()))
         #im prolly gonna have to add vars later
         vars = {}
         #open the oreilly site
