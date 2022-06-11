@@ -7,7 +7,6 @@ from selenium.webdriver.firefox.options import Options
 from selenium.webdriver.common.action_chains import ActionChains
 import time, oreilly_vars
 
-
 #TODO: input python scheduler logic so that the script keeps looking for email
 class oreilly:
     def open_account(self):
@@ -15,7 +14,7 @@ class oreilly:
         options = Options()
         options.headless = True
         #This prevents me from having to dwnload the gecko self.driver
-        self.driver = webdriver.Firefox(options=options, service=Service(GeckoDriverManager().install()))
+        self.driver = webdriver.Firefox(options=options, service=Service(executable_path=GeckoDriverManager().install()))
         #im prolly gonna have to add vars later
         vars = {}
         #open the oreilly site

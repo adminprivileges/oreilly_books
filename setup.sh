@@ -1,4 +1,6 @@
 #!/bin/bash
+#install firefox
+sudo apt install firefox
 #install Python Dependancies
 pip install virtualenv
 
