@@ -25,6 +25,7 @@ class oreilly:
         #input username
         self.driver.find_element(By.ID, "input-yrseibl2vce").send_keys(oreilly_vars.user)
         self.driver.find_element(By.CSS_SELECTOR, ".orm-Button-btnContentWrap").click()
+        self.driver.find_element(By.LINK_TEXT, "Sign in with password").click()
         element = self.driver.find_element(By.CSS_SELECTOR, ".orm-Input-labelTxt")
         actions = ActionChains(self.driver)
         actions.move_to_element(element).click_and_hold().perform()
